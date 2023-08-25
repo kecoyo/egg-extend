@@ -1,0 +1,61 @@
+{
+  "name": "@kecoyo/egg-extend",
+  "version": "1.0.0",
+  "description": "为 @kecoyo/egg-frameword 框架提供一个扩展方法。",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "extend"
+  ],
+  "homepage": "https://github.com/kecoyo/egg-extend#readme",
+  "bugs": {
+    "url": "https://github.com/kecoyo/egg/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kecoyo/egg-extend.git"
+  },
+  "license": "MIT",
+  "author": "kecoyo",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "scripts": {
+    "ci": "npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test"
+  },
+  "prettier": "@kecoyo/prettier-config",
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "@kecoyo/prettier-config": "^1.0.2",
+    "autod": "^3.0.1",
+    "egg": "^2.10.0",
+    "egg-bin": "^4.8.1",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.19.3",
+    "eslint": "^5.4.0",
+    "eslint-config-egg": "^7.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "ci": {
+    "version": "16, 18"
+  },
+  "eggPlugin": {
+    "name": "extend"
+  }
+}
